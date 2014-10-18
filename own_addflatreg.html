@@ -1,0 +1,385 @@
+<!-- BASIC WIZARD -->
+<div id="rootwizard" class="basic-wizard">
+  <ul class="nav nav-pills nav-justified">
+    <li><a href="#dtab1" data-toggle="tab"><span><i class="fa fa-pencil fa-rw"></i> Basic Details</a></li>
+    <li><a href="#dtab2" data-toggle="tab"><span><i class="fa fa-gavel fa-fw"></i> Lease Details</a></li>
+    <li><a href="#dtab3" data-toggle="tab"><i class="fa fa-home fa-fw"></i> Facilities</a></li>
+  </ul>
+  <div class="tab-content">
+    <div class="tab-pane" id="dtab1">
+      <br>
+      <form id="regflat1" role="form" method="post" action="">
+        <div class="row">
+          <div class="form-group  col-sm-6">
+            <label class="control-label" for="flatno">Flat No.</label>
+            <input name="flatno" id="flatno" type="text" maxlength="40"  class="form-control" placeholder="G-103" />
+          </div>
+          <div class="form-group  col-sm-6">
+            <label class="control-label" for="aptname">Apartment Name</label>
+            <input name="aptname" id="aptname" type="text" maxlength="70" class="form-control" placeholder="Omega Paradise"/>
+          </div>
+          <div class="col-sm-6">
+            <div class="form-group ">
+              <label class="control-label" for="societyname">Society Name</label>
+              <input name="societyname" id="societyname" type="text" maxlength="70"  class="form-control" placeholder="Omega Paradise"/>
+            </div>
+          </div>
+          <div class="col-sm-6">
+            <div class="form-group ">
+              <label class="control-label" for="locality">Locality</label>
+              <input name="locality" id="locality" type="text" maxlength="70"  class="form-control" placeholder="Wakad"/>
+            </div>
+          </div>
+        </div>
+        <!--Row End -->
+        <div class="row">
+          <div class="col-md-6">
+            <label class="control-label">Postal Address</label>
+            <div class="form-group">
+              <label class="control-label sr-only" for="street">Hidden Street</label>
+              <input name="street" id="street" type="text" maxlength="70"  class="form-control" placeholder="Street Name"/>
+            </div>
+            <div class="form-group">
+              <label class="control-label sr-only" for="address2">Hidden Address2</label>
+              <input name="address2" id="address2" type="text" maxlength="70"  class="form-control" placeholder="Address 2 (Optional)"/>
+            </div>
+            <div class="form-group">
+              <label class="control-label sr-only" for="town">Hidden Town</label>
+              <input name="town" id="town" type="text" maxlength="70"  class="form-control" placeholder="Village/Town/City"/>
+            </div>
+            <div class="form-group">
+              <label class="control-label sr-only" for="state">Hidden State</label>
+              <input name="state" id="state" type="text" maxlength="70"  class="form-control" placeholder="State"/>
+            </div>
+            <div class="form-group">        
+              <label class="control-label sr-only" for="pincode">Hidden PinCode</label>
+              <input name="pincode" id="pincode" type="text" maxlength="6"  class="form-control" placeholder="Pincode"/>
+            </div>
+            <div class="form-group">        
+              <label class="control-label sr-only" for="country">Hidden Country</label>
+              <input name="country" id="country" type="text" class="form-control" value="India" readonly/>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="form-group ">
+              <label class="control-label" for="flatrent">Tenant Base Rent</label>  
+              <div class="input-group">
+                <span class="input-group-addon"><i class="fa fa-inr fa-fw"></i></span>
+                <input name="flatrent" id="flatrent" type="text" maxlength="6" class="form-control" />
+                <span class="input-group-addon"> .00</span>
+              </div>
+            </div>
+            <div class="form-group ">
+              <label class="control-label" for="preocc">Present Occupancy</label>  
+              <select name="preocc" class="form-control" id="preocc">
+                <option value="" selected="selected"></option>
+                <option>0</option>
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+                <option>5</option>
+                <option>6</option>
+                <option>7</option>
+                <option>8</option>
+                <option>9</option>
+                <option>10</option>
+                <option>11</option>
+                <option>12</option>
+                <option>13</option>
+                <option>14</option>
+                <option>15</option>
+              </select>
+            </div>
+            <div class="form-group ">
+              <label class="control-label" for="tocc">Total Occupancy</label>  
+              <select name="tocc" class="form-control" id="tocc">
+                <option value="" selected="selected"></option>
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+                <option>5</option>
+                <option>6</option>
+                <option>7</option>
+                <option>8</option>
+                <option>9</option>
+                <option>10</option>
+                <option>11</option>
+                <option>12</option>
+                <option>13</option>
+                <option>14</option>
+                <option>15</option>
+              </select>
+            </div>
+            <label class="control-label">Let Out to</label>       
+            <div class="form-group">
+              <label class="radio-inline">
+              <input type="radio" name="pgfor" id="gents" value="gents">
+              Gents
+              </label>
+              <label class="radio-inline">
+              <input type="radio" name="pgfor" id="ladies" value="ladies">
+              Ladies
+              </label>
+            </div>
+          </div>
+          <!--col-md-6 End -->
+        </div>
+        <!--Row End-->
+      </form>
+      <br>
+    </div>
+    <div class="tab-pane" id="dtab2">
+      <br>
+      <form id="regflat2" role="form" method="post" action="">
+        <div class="row">
+          <div class="col-md-4 col-sm-6">
+            <div class="form-group">
+              <label class="control-label" for="leasestart">Start Date</label>  
+              <div class="input-group">
+                <input name="leasestart" id="leasestart" type="text" class="form-control" />
+                <span class="input-group-addon"><span class="glyphicon glyphicon-calendar"></span></span>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-6">
+            <div class="form-group">
+              <label class="control-label" for="leaseend">End Date</label>  
+              <div class="input-group">
+                <input name="leaseend" id="leaseend" type="text" class="form-control" />
+                <span class="input-group-addon"><span class="glyphicon glyphicon-calendar"></span></span>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-6">
+            <div class="form-group">
+              <label class="control-label" for="leasedays">Days Remaining</label>  
+              <input name="leasedays" id="leasedays" type="text" class="form-control" value="267" readonly/>
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-6">
+            <div class="form-group ">
+              <label class="control-label" for="leaserentdue">Rental Cycle</label>  
+              <select name="leaserentdue" class="form-control" id="leaserentdue">
+                <option value="" selected="selected"></option>
+                <option>Monthly</option>
+                <option>Quarterly</option>
+                <option>Half Yearly</option>
+                <option>Yearly</option>
+              </select>
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-6">
+            <div class="form-group">
+              <label class="control-label" for="leaserent">Rental</label>  
+              <div class="input-group">
+                <span class="input-group-addon"><i class="fa fa-inr fa-fw"></i></span>
+                <input name="leaserent" id="leaserent" type="text" maxlength="7" class="form-control" />
+                <span class="input-group-addon"> .00</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-6">
+            <div class="form-group ">
+              <label class="control-label" for="leaserentduedate">Rental Due Date</label>  
+              <div class="input-group">
+                <input name="leaserentduedate" id="leaserentduedate" type="text" class="form-control" />
+                <span class="input-group-addon"><span class="glyphicon glyphicon-calendar"></span></span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--Row End-->
+      </form>
+      <br>
+    </div>
+    <div class="tab-pane" id="dtab3">
+      <br>
+      <form id="regflat3" role="form" method="post" action="">
+        <label class="control-label"><i class="fa fa-video-camera fa-fw"></i> DTH Television</label>
+        <div class="row">
+          <div class="col-sm-6">
+            <div class="form-group">
+              <div class="input-group">
+                <span class="input-group-addon">
+                <input type="checkbox" name="dth">
+                </span>
+                <input name="dthcost" id="dthcost" type="text" maxlength="4" class="form-control" placeholder="Cost/month">
+                <span class="input-group-addon"> .00</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6">
+            <div class="form-group">
+              <label class="control-label sr-only" for="dthduedate">DTH Bill Due Date</label>  
+              <div class="input-group">
+                <input name="dthduedate" id="dthduedate" type="text" class="form-control" value="DTH Bill Due Date" />
+                <span class="input-group-addon"><span class="glyphicon glyphicon-calendar"></span></span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--DTH Row End-->
+        <label class="control-label"> <i class="fa fa-rss fa-fw"></i> Wifi Connectivity</label>
+        <div class="row">
+          <div class="col-sm-6">
+            <div class="form-group">
+              <div class="input-group">
+                <span class="input-group-addon">
+                <input type="checkbox" name="wifi">
+                </span>
+                <input name="wificost" id="wificost" type="text" maxlength="4" class="form-control" placeholder="Cost/month">
+                <span class="input-group-addon"> .00</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6">
+            <div class="form-group">
+              <label class="control-label sr-only" for="wifiduedate">Wifi Bill Due Date</label>  
+              <div class="input-group">
+                <input name="wifiduedate" id="wifiduedate" type="text" class="form-control" value="Wifi Bill Due Date" />
+                <span class="input-group-addon"><span class="glyphicon glyphicon-calendar"></span></span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--Wifi Row End-->
+        <label class="control-label"> <i class="fa fa-female fa-fw"></i> Maid for Cooking</label> 
+        <div class="row">
+          <div class="col-sm-6">
+            <div class="form-group">
+              <div class="input-group">
+                <span class="input-group-addon">
+                <input type="checkbox" name="maidcook">
+                </span>
+                <input name="maidcookcost" id="maidcookcost" type="text" maxlength="4" class="form-control" placeholder="Cost/month">
+                <span class="input-group-addon"> .00</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6">
+            <div class="form-group">
+              <label class="control-label sr-only" for="maidcookduedate">Payment Due Date</label>  
+              <div class="input-group">
+                <input name="maidcookduedate" id="maidcookduedate" type="text" class="form-control" value="Payment Due Date" />
+                <span class="input-group-addon"><span class="glyphicon glyphicon-calendar"></span></span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--Maidcook Row End-->
+        <label class="control-label"> <i class="fa fa-male fa-fw"></i> Maid for Cleaning</label>
+        <div class="row">
+          <div class="col-sm-6">
+            <div class="form-group">
+              <div class="input-group">
+                <span class="input-group-addon">
+                <input type="checkbox" name="maidclean">
+                </span>
+                <input name="maidcleancost" id="maidcleancost" type="text" maxlength="4" class="form-control" placeholder="Cost/month">
+                <span class="input-group-addon"> .00</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6">
+            <div class="form-group">
+              <label class="control-label sr-only" for="maidcleanduedate">Payment Due Date</label>  
+              <div class="input-group">
+                <input name="maidcleanduedate" id="maidcleanduedate" type="text" class="form-control" value="Payment Due Date" />
+                <span class="input-group-addon"><span class="glyphicon glyphicon-calendar"></span></span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--Maidclean Row End-->
+        <label class="control-label"><i class="fa fa-bolt fa-fw"></i> Power Supply</label>
+        <div class="row">
+          <div class="col-sm-6">
+            <div class="form-group">
+              <div class="input-group">
+                <span class="input-group-addon">
+                <input type="checkbox" name="hotwater" checked="checked" disabled="disabled">
+                </span>
+                <input type="text" class="form-control" placeholder="Cost is a Variable" disabled="disabled">
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6">
+            <div class="form-group">
+              <label class="control-label sr-only" for="powerduedate">Power Bill Due Date</label>  
+              <div class="input-group">
+                <input name="powerduedate" id="powerduedate" type="text" class="form-control" value="Power Bill Due Date" />
+                <span class="input-group-addon"><span class="glyphicon glyphicon-calendar"></span></span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--Power Row End-->
+        <label class="control-label"> <i class="fa fa-hand-o-right fa-fw"></i> Washing Machine</label>
+        <div class="row">
+          <div class="col-sm-6">
+            <div class="form-group">
+              <div class="input-group">
+                <span class="input-group-addon">
+                <input type="checkbox" name="wash">
+                </span>
+                <input type="text" class="form-control" placeholder="Included in Base Rent" readonly>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--Wash Row End-->
+        <label class="control-label"> <i class="fa fa-steam fa-fw"></i> Geyser</label>
+        <div class="row">
+          <div class="col-sm-6">
+            <div class="form-group">
+              <div class="input-group">
+                <span class="input-group-addon">
+                <input type="checkbox" name="hotwater">
+                </span>
+                <input type="text" class="form-control" placeholder="Included in Base Rent" readonly>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--Hot Row End-->
+        <div class="form-group">
+          <span class="help-block"><strong>You may want to Re-Verify All the Details before Submitting.</strong></span>
+        </div>
+      </form>
+    </div>
+  </div>
+  <!-- tab-content -->
+  <ul class="pager wizard">
+    <li class="previous"><a href="javascript:void(0)">Previous</a></li>
+    <li class="next"><a href="javascript:void(0)">Next</a></li>
+    <li class="next finish" style="display:none;"><a id="addflatbutton" href="#">Add Flat</a></li>
+  </ul>
+</div>
+<!-- #rootwizard -->
+<script src="incld/js/jquery.bootstrap.wizard.min.js"></script>
+<script>
+  $(document).ready(function() {
+  	  	$('#rootwizard').bootstrapWizard({
+  			tabClass: 'nav nav-pills nav-justified nav-disabled-click', onTabShow: function(tab, navigation, index) 
+  			{
+  			var $total = navigation.find('li').length;
+  			var $current = index+1;
+  			// If it's the last tab then hide the last button and show the finish instead
+  			if($current >= $total) {
+  				$('#rootwizard').find('.pager .next').hide();
+  				$('#rootwizard').find('.pager .finish').show();
+  				$('#rootwizard').find('.pager .finish').removeClass('disabled');
+  			} else {
+  				$('#rootwizard').find('.pager .next').show();
+  				$('#rootwizard').find('.pager .finish').hide();
+  			}
+  		},
+  		onTabClick: function(tab, navigation, index) {
+        return false;
+      },
+  		});
+  	});	       	       
+          
+</script>
